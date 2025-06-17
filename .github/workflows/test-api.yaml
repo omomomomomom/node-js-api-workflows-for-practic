@@ -26,6 +26,8 @@ jobs:
       - name: Post a user
         run: 'curl -X POST http://app:3000/api/users -H ''Content-Type: application/json'' -d ''{"username": "hello","address": "dwded"}'''
       - name: list all the servers
-        run: ls -a -ltr
+        run: |
+          cd ./app
+          ls -a -ltr
       - name: Get Users
         run: curl http://app:3000/api/users
