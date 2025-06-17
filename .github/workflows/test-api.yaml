@@ -7,7 +7,7 @@ jobs:
     container: ubuntu:20.04
     services:
       app:
-        image: alialaa17/simple-node-api
+        image: omkar012/omkar-docker-01
         # ports:
         #   - 3001:3000
         env:
