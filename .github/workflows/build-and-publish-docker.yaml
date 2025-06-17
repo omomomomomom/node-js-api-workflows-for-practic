@@ -21,8 +21,8 @@ jobs:
         with:
           images: omkar012/omkar-docker-01
           tags: |
-            type=samver, pattern={{version}}
-            type=samver, pattern={{major}}.{{minor}}
+            type=semver, pattern={{version}}
+            type=semver, pattern={{major}}.{{minor}}
       - name: build and push
         uses: docker/build-push-action@v4
         with:
